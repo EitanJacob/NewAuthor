@@ -14,9 +14,9 @@ public class EitanFrequency implements IWordFrequency {
         double totalWords = 0;
         Map<Integer, Double> myMap = new HashMap<>();
         while (sc.hasNext()) {
-            /* Keeping track of total words to find percentage of each word length in lines 28-31 */
+            // Keeping track of total words to find percentage of each word length in lines 28-31
             totalWords = totalWords + 1;
-            /* Creating map of word lengths with corresponding frequency */
+            // Creating map of word lengths with corresponding frequency
             String s = sc.next();
             int wordLength = s.length();
             if (!myMap.containsKey(wordLength)) {
