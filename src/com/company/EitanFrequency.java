@@ -26,7 +26,7 @@ public class EitanFrequency implements IWordFrequency {
                 myMap.put(wordLength, currAmount + 1);
             }
         }
-        //Replacing the frequency with frequency percentage using variable "totalWords"
+        //Replacing the frequency with frequency percentage using variable "totalWords "
         for (Integer i : myMap.keySet()) {
             double totalOfThisLength = myMap.get(i);
             myMap.put(i, totalOfThisLength / totalWords * 100);
